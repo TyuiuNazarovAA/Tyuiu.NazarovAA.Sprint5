@@ -13,7 +13,7 @@ namespace Tyuiu.NazarovAA.Sprint5.Task6.V20.Lib
                 words = reader.ReadLine().Split();
             }
 
-            return words.Count(w => w.Length == 6);
+            return words.Count(w => w.Length == (6 - w.Count(c => c == '.')));
         }
     }
 }
