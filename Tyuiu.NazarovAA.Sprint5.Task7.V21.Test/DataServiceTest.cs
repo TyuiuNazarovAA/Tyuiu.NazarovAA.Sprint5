@@ -8,7 +8,7 @@ namespace Tyuiu.NazarovAA.Sprint5.Task7.V21.Test
         [TestMethod]
         public void CheckedExistsFile()
         {
-            string path = @"C:\DataSprint5\OutPutDataFileTask7V21.txt";
+            string path = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V21.txt");
 
             bool wait = true;
             bool isExists = File.Exists(path);
@@ -19,7 +19,7 @@ namespace Tyuiu.NazarovAA.Sprint5.Task7.V21.Test
         [TestMethod]
         public void CheckOutputFile()
         {
-            string path = @"C:\DataSprint5\OutPutDataFileTask7V21.txt";
+            string path = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V21.txt");
 
             string wait = "Стока и точка";
             string res;

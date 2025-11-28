@@ -26,7 +26,7 @@ namespace Tyuiu.NazarovAA.Sprint5.Task7.V21
             Console.WriteLine("***************************************************************************");
 
             string inputPath = @"C:\DataSprint5\InPutDataFileTask7V21.txt";
-            string outputPath = @"C:\DataSprint5\OutPutDataFileTask7V21.txt";
+            string outputPath = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V21.txt");
             Console.WriteLine("Данные находятся в файле: " + inputPath);
             Console.WriteLine("Данные записываются в файл: " + outputPath);
 
